@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Packaging / build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+*.cover
+*.py,cover
+
+# Lint / type checking
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Local config overrides (keep your committed config.yaml if it exists)
+config.local.yaml
+config.local.yml
+

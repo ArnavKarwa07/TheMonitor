@@ -1,0 +1,38 @@
+app:
+  name: Monitor
+  startup_enabled: true
+monitoring:
+  capture_interval_seconds: 4
+  bad_posture_alert_seconds: 45
+  cooldown_seconds: 300
+posture:
+  good_angle_threshold_degrees: 10.0
+  fair_angle_threshold_degrees: 35.0
+  require_shoulders_level: true
+  require_forward_head_check: true
+  eye_angle_threshold_degrees: 10.0
+  neck_forward_angle_threshold_degrees: 10.0
+  camera_index: 0
+notifications:
+  enabled: true
+  title: Posture Alert
+  message: You're slouching. Sit upright and align your shoulders.
+startup:
+  mode: ask_on_login
+  launcher: registry
+logging:
+  level: INFO
+  file: logs/monitor.log
+habits:
+  water:
+    enabled: true
+    interval_minutes: 60
+  stretch:
+    enabled: true
+    interval_minutes: 90
+  eye_break:
+    enabled: true
+    interval_minutes: 30
+  stand_up:
+    enabled: true
+    interval_minutes: 45
